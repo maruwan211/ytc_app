@@ -20,13 +20,13 @@ include('connection.php');
 <body>
     
     <div class="container">
-        <a href="index.php" class="btn btn-primary mt-3">Go Back</a>
+        <a href="index1.php" class="btn btn-primary mt-3">Go Back</a>
         <hr>
-        <h1 class="mt-5">เพิ่มข้อมูล</h1>
+        <h1 class="mt-5">เพิ่มข้อมูลสินค้า</h1>
         <hr>
         
 <div class="mb-3">
-<form  action="create.php" method="post">
+<form  action="create1.php" method="post">
             <div class="mb-3">
                 <label for="S_Name" class="form-label">Name</label>
                 <input type="text" class="form-control" name="S_Name" required>

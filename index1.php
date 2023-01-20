@@ -21,14 +21,12 @@ include('connection.php');
 <br>
 
 		<div class="container">
-
-				<a href="index.php" class="btn btn-success">ข้อมูลลูกค้า</a>
+        <a href="index.php" class="btn btn-success">ข้อมูลลูกค้า</a>
                 <a href="index1.php" class="btn btn-success">ข้อมูลสินค้า</a>
                 <a href="index2.php" class="btn btn-success">ข้อมูลประเภทสินค้า</a>
                 <a href="index3.php" class="btn btn-success">ข้อมูลการขาย</a>
                 <a href="index4.php" class="btn btn-success">ข้อมูลพนักงาน</a>
                 <a href="logout.php" class="btn btn-danger">Logout</a>
-
 
 				
 		<table id="mytable" class="table table-bordered table-striped">
@@ -41,10 +39,10 @@ include('connection.php');
 				<th>LastName</th>
 				<th>Address</th>
 				<th>SunjectName</th>
-				<th><center>Action</center></th>
+                <th><center>Action</center></th>
 		 </tr>
          <tr>
-         <a href="ins_form.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Add</a>
+         <a href="ins_form1.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Add</a>
          </tr>
  </thead>
  <tbody>
@@ -63,9 +61,8 @@ include('connection.php');
             echo '<td>'. $row['S_Address'] . '</td>';
             echo '<td>'. $row['S_SunjectName'] . '</td>';
             echo '<td><a role="button"  href="update.php?c_no='.$row['c_no'].'" class="btn btn-warning">Update</a> ';  //ปุ่มที่เพิ่มเข้ามา
-            echo '<a href="delete.php?c_no='.$row['c_no'].'" class="btn btn-danger">delete</a>';  //ปุ่มที่เพิ่มเข้ามา
-            echo '&nbsp;<a href="ins_form.php  " class="btn btn-success">Add</a>';  //ปุ่มที่เพิ่มเข้ามา
-            
+                echo '<a href="delete.php?c_no='.$row['c_no'].'" class="btn btn-danger">delete</a>';  //ปุ่มที่เพิ่มเข้ามา
+                echo '&nbsp;<a href="ins_form1.php  " class="btn btn-success">Add</a>';  //ปุ่มที่เพิ่มเข้ามา
             echo '</tr>';
  }
  } else {

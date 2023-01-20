@@ -22,6 +22,7 @@ include('connection.php');
 
 		<div class="container">
 
+<<<<<<< HEAD
 				<a href="index.php" class="btn btn-success">ข้อมูลลูกค้า</a>
                 <a href="index1.php" class="btn btn-success">ข้อมูลสินค้า</a>
                 <a href="index2.php" class="btn btn-success">ข้อมูลประเภทสินค้า</a>
@@ -30,6 +31,12 @@ include('connection.php');
                 <a href="logout.php" class="btn btn-danger">Logout</a>
 
 
+=======
+				<a href="ins_form.php" class="btn btn-success">เพิ่มข้อมูลลูกค้า</a>
+				<a href="ins_form.php" class="btn btn-success">เพิ่มข้อมูลสินค้า</a>
+				<a href="ins_form.php" class="btn btn-success">เพิ่มข้อมูลประเภทสินค้า</a>
+				<a href="ins_form.php" class="btn btn-success">เพิ่มข้อมูลการขาย</a>
+>>>>>>> 29322848417c90432ca0b54ea3a797654a7671ab
 				
 		<table id="mytable" class="table table-bordered table-striped">
         <br>
@@ -41,11 +48,16 @@ include('connection.php');
 				<th>LastName</th>
 				<th>Address</th>
 				<th>SunjectName</th>
+<<<<<<< HEAD
 				<th><center>Action</center></th>
 		 </tr>
          <tr>
          <a href="ins_form.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Add</a>
          </tr>
+=======
+				<th>Action</th>
+		 </tr>
+>>>>>>> 29322848417c90432ca0b54ea3a797654a7671ab
  </thead>
  <tbody>
  
@@ -62,10 +74,15 @@ include('connection.php');
             echo '<td>'. $row['S_LastName'] . '</td>';
             echo '<td>'. $row['S_Address'] . '</td>';
             echo '<td>'. $row['S_SunjectName'] . '</td>';
+<<<<<<< HEAD
             echo '<td><a role="button"  href="update.php?c_no='.$row['c_no'].'" class="btn btn-warning">Update</a> ';  //ปุ่มที่เพิ่มเข้ามา
             echo '<a href="delete.php?c_no='.$row['c_no'].'" class="btn btn-danger">delete</a>';  //ปุ่มที่เพิ่มเข้ามา
             echo '&nbsp;<a href="ins_form.php  " class="btn btn-success">Add</a>';  //ปุ่มที่เพิ่มเข้ามา
             
+=======
+            echo '<td><a role="button"  href="update.php?c_no='.$row['c_no'].'" class="btn btn-primary">Update</a> ';  //ปุ่มที่เพิ่มเข้ามา
+                echo '<a href="delete.php?c_no='.$row['c_no'].'" class="btn btn-danger">delete</a>';  //ปุ่มที่เพิ่มเข้ามา
+>>>>>>> 29322848417c90432ca0b54ea3a797654a7671ab
             echo '</tr>';
  }
  } else {
